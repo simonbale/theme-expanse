@@ -49,7 +49,7 @@
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
             {% for page in pages %}
-            <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
+            <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a>title</li>
             {% endfor %}
         </ul>
         {% endif %}
@@ -246,7 +246,7 @@
 
     <!-- js -->
     <script type="text/javascript">
-      var cover = {% if site.cover_photo %}'{{ site.cover_photo }}'{% else %}"{{ assets('images/cover-photo-1.jpg') }}"{% endif %};
+      var cover = {% if site.cover_photo %}'{{ site.cover_photo }}'{% else %}"{{ assets('images/cover-photo-1_copy.jpg') }}"{% endif %};
       (function(d, t) {
           var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
           g.src = "{{ assets('js/expanse.min.js') }}";
